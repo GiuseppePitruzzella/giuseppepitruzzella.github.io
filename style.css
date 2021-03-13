@@ -1,0 +1,70 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 5%;
+    padding: 0%;
+    background-color: #e3edf7;;
+    font-family: 'Helvetica Neue';
+}
+h1 {
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: 500;
+    color: #0a0a0a;
+}
+p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(34, 34, 34);
+}
+.circularImg {
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-image: url('img/me.jpg');
+    background-size: cover;
+    border-radius: 100px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+a {
+    display: flex;
+    background: #e3edf7;
+    height: 50px;
+    width: 50px;
+    margin-right: 35px;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    transition: .5s;
+}
+a i{
+    font-size: 20px;
+    color: #777;
+}
+a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 0.1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-size: 50px;
+}
+
+li:hover {
+    transform: scale(0.95);
+}
