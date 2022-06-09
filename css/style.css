@@ -6,32 +6,34 @@
     font-family: Nunito;
 }
 
-#content {
+#first-page {
     position: absolute;
-    top: 40%;
+    width: 100vw;
+    height: 100vh;
+    top: 35%;
     left: 10%;
 }
 
-#content h1 {
+#first-page h1 {
     font-weight: bold;
     font-size: 72px;
     color: white;
 }
 
-#content p {
-    font-size: 42px;
+#first-page p {
+    font-size: 28px;
     color: white;
 }
 
-#main-container {
+#root {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(0, 0, 0);
 }
 
 #navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
 }
 
 /* Navbar links */
@@ -71,4 +73,12 @@ to prevent sudden quick movement (as the navigation
 bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 60px;
+}
+
+#bio-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    margin-top: 100vh;
 }
