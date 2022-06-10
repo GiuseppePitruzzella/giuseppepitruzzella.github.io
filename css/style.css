@@ -6,6 +6,15 @@
     font-family: Nunito;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 #first-page {
     position: absolute;
     width: 100vw;
@@ -104,6 +113,6 @@
 @media screen and (max-width: 1000px) {
     .column-66, .column-33 {
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
 }
