@@ -4,6 +4,8 @@
     margin: 0 auto;
     padding: 0;
     font-family: Nunito;
+    scroll-behavior: smooth;
+    color: white;
 }
 
 body::-webkit-scrollbar {
@@ -26,12 +28,10 @@ body {
 #first-page h1 {
     font-weight: bold;
     font-size: 72px;
-    color: white;
 }
 
 #first-page p {
     font-size: 28px;
-    color: white;
 }
 
 #root {
@@ -81,7 +81,7 @@ body {
 
 #main-page {
     width: 100vw;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 15px);
 }
 
 .container {
@@ -142,7 +142,6 @@ body {
 
 /* Content */
 .content {
-  background-color: white;
   padding: 10px;
   border-radius: 10px;
 }
