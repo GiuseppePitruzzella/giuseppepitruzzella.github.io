@@ -5,7 +5,7 @@
     padding: 0;
     font-family: Nunito;
     scroll-behavior: smooth;
-    color: white;
+    /* color: white; */
 }
 
 body::-webkit-scrollbar {
@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    background-image: url("/img/vector_test.png");
 }
 
 #first-page {
@@ -39,18 +40,23 @@ body {
 }
 
 #root {
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+}
+
+#test {
+    max-width: 100%;
+    height: auto;
 }
 
 #navbar {
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
 }
 
 #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px;
     text-decoration: none;
