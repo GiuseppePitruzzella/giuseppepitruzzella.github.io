@@ -15,7 +15,8 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    background-image: url("/img/vector_test.png");
+    /* background-image: url("/img/vector_test.png"); */
+    background-color: black;
 }
 
 #first-page {
@@ -155,3 +156,18 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
+.blogCol {
+    float: center;
+    width: 50%;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.blogRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
