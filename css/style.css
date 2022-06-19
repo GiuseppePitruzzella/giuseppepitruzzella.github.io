@@ -7,11 +7,6 @@
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -20,6 +15,16 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     /* background-image: url("/img/vector_test.png"); */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar {
+    background-color: white;
+    z-index: 1;
 }
 
 #first-page {
