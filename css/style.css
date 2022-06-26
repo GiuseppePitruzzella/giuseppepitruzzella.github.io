@@ -35,26 +35,30 @@ a {
     left: 10%;
 }
 
-#first-page h1 {
+/* #first-page h1 {
     font-weight: bold;
     font-size: 72px;
-}
+} */
 
 #intro {
     font-size: 28px;
 }
 
-#short-bio {
-    font-size: 18px;
+h1 {
+    font-size: 100px;
 }
 
-#root {
-    /* background-color: rgb(0, 0, 0); */
+h2 {
+    font-size: 48px;
 }
 
-#test {
-    max-width: 100%;
-    height: auto;
+h3 {
+    font-size: 32px;
+}
+
+p {
+    padding-top: 16px;
+    font-size: 28px;
 }
 
 #navbar {
