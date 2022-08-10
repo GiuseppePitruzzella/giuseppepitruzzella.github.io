@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&display=swap');
+@font-face {
+    font-family: 'Kaftan';
+    src: url(/font/Kaftan.otf);
+}
+
+@font-face {
+    font-family: 'Slack';
+    src: url(/font/Slack.otf);
+}
 
 *, html, body {
     margin: 0 auto;
     padding: 0;
-    font-family: Inria Serif;
+    font-family: 'Slack';
+    color: white;
     scroll-behavior: smooth;
 }
 
@@ -14,7 +23,8 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    /* background-image: url("/img/vector_test.png"); */
+    overflow-x: hidden;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='3000' height='3000' preserveAspectRatio='none' viewBox='0 0 3000 3000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1116%26quot%3b)' fill='none'%3e%3crect width='3000' height='3000' x='0' y='0' fill='rgba(108%2c 105%2c 141%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c1164.398C229.177%2c1171.749%2c452.614%2c1124.961%2c659.697%2c1026.509C888.704%2c917.634%2c1166.526%2c810.206%2c1249.211%2c570.496C1332.031%2c330.394%2c1091.046%2c99.447%2c1066.678%2c-153.365C1040.484%2c-425.119%2c1284.63%2c-751.947%2c1102.166%2c-955.032C918.58%2c-1159.366%2c565.323%2c-953.073%2c296.676%2c-1010.386C57.784%2c-1061.351%2c-139.249%2c-1341.202%2c-372.819%2c-1269.705C-606.862%2c-1198.063%2c-644.065%2c-880.191%2c-784.208%2c-679.52C-906.649%2c-504.197%2c-1088.04%2c-370.797%2c-1144.617%2c-164.571C-1205.128%2c55.993%2c-1202.646%2c297.806%2c-1109.661%2c506.765C-1016.266%2c716.646%2c-830.672%2c867.92%2c-633.048%2c985.041C-440.471%2c1099.171%2c-223.741%2c1157.221%2c0%2c1164.398' fill='%234c4a63'%3e%3c/path%3e%3cpath d='M3000 4489.0599999999995C3273.763 4476.152 3432.177 4179.402 3661.8869999999997 4029.916 3889.841 3881.573 4258.502 3872.041 4344.59 3614.054 4432.725 3349.932 4140.63 3113.478 4056.2380000000003 2848.136 3989.445 2638.13 4022.251 2403.299 3900.985 2219.292 3770.7200000000003 2021.63 3569.542 1889.217 3356.4 1786.213 3111.683 1667.95 2841.866 1497.287 2583.866 1582.778 2325.758 1668.305 2246.126 1988.1599999999999 2085.3 2207.408 1939.405 2406.301 1736.87 2569.92 1683.166 2810.668 1627.518 3060.127 1674.455 3324.417 1784.684 3555.016 1893.799 3783.285 2096.142 3940.1059999999998 2296.747 4094.283 2514.302 4261.487 2725.919 4501.983 3000 4489.0599999999995' fill='%239492ae'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1116'%3e%3crect width='3000' height='3000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");;
 }
 
 a {
@@ -23,28 +33,19 @@ a {
 }
 
 #navbar {
-    background-color: white;
     z-index: 1;
 }
 
 #first-page {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 35%;
-    left: 10%;
-}
-
-/* #first-page h1 {
-    font-weight: bold;
-    font-size: 72px;
-} */
-
-#intro {
-    font-size: 28px;
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
+    font-family: Kaftan;
     font-size: 100px;
 }
 
@@ -63,25 +64,15 @@ p {
 
 #navbar {
     overflow: hidden;
-    /* background-color: rgb(0, 0, 0); */
 }
 
 #navbar a {
     float: left;
     display: block;
-    /* color: rgb(0, 0, 0); */
     text-align: center;
-    padding: 14px;
+    padding: 20px 14px;
     text-decoration: none;
-    margin: 0px 10px;
-}
-
-#navbar #logo {
-    font-weight: bold;
-}
-
-#right-align-items {
-    float: right;
+    margin: 0px 100px;
 }
 
 .content {
@@ -112,21 +103,18 @@ p {
     height: 100vh;
 }
 
-/* Clear floats */
 .row:after {
     content: "";
     display: table;
     clear: both
 }
 
-/* 2/3 column */
 .column-66 {
     float: left;
     width: 66.66666%;
     padding: 20px;
 }
 
-/* 1/3 column */
 .column-33 {
     float: left;
     width: 33.33333%;
@@ -182,4 +170,3 @@ p {
     display: table;
     clear: both;
 }
-  
