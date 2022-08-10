@@ -1,7 +1,3 @@
-// $(window).on("load", () => { 
-//   $('.loader-wrapper').fadeOut("slow"); 
-// });
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() { scroll() };
 
