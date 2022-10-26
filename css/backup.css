@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Kaftan';
+    src: url(/font/Kaftan.otf);
+}
+
+@font-face {
+    font-family: 'Slack';
+    src: url(/font/Slack.otf);
+}
+
+*, html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Slack';
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
+}
+
+#root {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='3000' height='3000' preserveAspectRatio='none' viewBox='0 0 3000 3000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1043%26quot%3b)' fill='none'%3e%3crect width='3000' height='3000' x='0' y='0' fill='rgba(191%2c 175%2c 166%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c1081.766C195.02%2c1039.656%2c366.053%2c934.2%2c515.23%2c801.714C647.97%2c683.826%2c694.399%2c506.701%2c804.407%2c367.36C960.376%2c169.804%2c1278.799%2c64.947%2c1295.197%2c-186.221C1310.936%2c-427.29%2c1053.542%2c-594.807%2c878.065%2c-760.848C716.985%2c-913.266%2c533.719%2c-1031.569%2c324.403%2c-1104.813C106.241%2c-1181.153%2c-123.683%2c-1239.529%2c-349.537%2c-1190.413C-584.097%2c-1139.404%2c-808.701%2c-1017.733%2c-954.145%2c-826.772C-1095.859%2c-640.708%2c-1095.587%2c-393.788%2c-1132.216%2c-162.788C-1169.414%2c71.797%2c-1252.146%2c311.461%2c-1169.968%2c534.307C-1085.471%2c763.442%2c-902.465%2c956.566%2c-681.266%2c1060.071C-471.223%2c1158.356%2c-226.677%2c1130.712%2c0%2c1081.766' fill='%23a99387'%3e%3c/path%3e%3cpath d='M3000 4419.866C3261.516 4451.263 3522.84 4284.174 3700.063 4089.319 3861.532 3911.786 3834.268 3643.585 3912.409 3416.683 3981.013 3217.474 4134.338 3048.023 4131.219 2837.355 4127.912 2613.948 4052.129 2383.295 3894.763 2224.684 3740.882 2069.5860000000002 3491.369 2090.857 3295.182 1994.703 3043.907 1871.55 2859.974 1537.825 2583.667 1582.1 2315.258 1625.11 2233.948 1977.02 2066.957 2191.513 1910.145 2392.931 1687.764 2554.15 1632.816 2803.429 1576.266 3059.976 1616.751 3346.982 1764.358 3564.299 1904.893 3771.2039999999997 2194.591 3790.878 2400.228 3933.263 2616.265 4082.848 2739.105 4388.543 3000 4419.866' fill='%23d5cbc5'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1043'%3e%3crect width='3000' height='3000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar {
+    z-index: 1;
+}
+
+#first-page {
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Kaftan;
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    padding-top: 16px;
+    font-size: 28px;
+}
+
+#navbar {
+    overflow: hidden;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 14px;
+    text-decoration: none;
+    margin: 0px 100px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#main-page {
+    width: 100vw;
+    height: calc(100vh - 15px);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .column-66, .column-33 {
+        width: 100%;
+        /* text-align: center; */
+    }
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 30px 40px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  height: 15%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.blogCol {
+    float: center;
+    width: 50%;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.blogRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
